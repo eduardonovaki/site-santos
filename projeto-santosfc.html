@@ -115,6 +115,281 @@
 
   </div>
 </div>
+<!-- ELENCO DO SANTOS -->
+<section id="elenco">
+
+  <p class="section-eyebrow">2026</p>
+  <h2 class="section-heading">Elenco Atual!</h2>
+  <div class="divider"></div>
+
+  <div class="elenco-grid" id="elenco-grid">
+  </div>
+
+</section>
+<!-- CAMPO (FEITO EXCLUSIVAMENTE PELO CLAUDE) -->
+<section id="campo">
+
+  <p class="section-eyebrow">Interativo</p>
+  <h2 class="section-heading">Monte seu time</h2>
+  <div class="divider"></div>
+  <p class="section-desc">
+    Selecione um jogador na lista e clique em uma posição no campo para escalá-lo.
+  </p>
+
+  <div class="campo-layout">
+
+    <!-- Campo SVG -->
+    <div class="campo-wrap" id="campo-wrap">
+
+      <svg class="campo-svg" viewBox="0 0 100 143" xmlns="http://www.w3.org/2000/svg">
+        <!-- Gramado -->
+        <rect width="100" height="143" fill="#1e5c1e"/>
+        <!-- Faixas alternadas -->
+        <rect y="0"   width="100" height="13" fill="#1a551a"/>
+        <rect y="13"  width="100" height="13" fill="#1e5c1e"/>
+        <rect y="26"  width="100" height="13" fill="#1a551a"/>
+        <rect y="39"  width="100" height="13" fill="#1e5c1e"/>
+        <rect y="52"  width="100" height="13" fill="#1a551a"/>
+        <rect y="65"  width="100" height="13" fill="#1e5c1e"/>
+        <rect y="78"  width="100" height="13" fill="#1a551a"/>
+        <rect y="91"  width="100" height="13" fill="#1e5c1e"/>
+        <rect y="104" width="100" height="13" fill="#1a551a"/>
+        <rect y="117" width="100" height="13" fill="#1e5c1e"/>
+        <rect y="130" width="100" height="13" fill="#1a551a"/>
+        <!-- Linhas do campo -->
+        <rect x="2" y="2" width="96" height="139" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <line x1="2" y1="71.5" x2="98" y2="71.5" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Círculo central -->
+        <circle cx="50" cy="71.5" r="14" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <circle cx="50" cy="71.5" r="0.8" fill="rgba(255,255,255,0.6)"/>
+        <!-- Área grande cima -->
+        <rect x="16.5" y="2" width="67" height="22" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Área pequena cima -->
+        <rect x="31" y="2" width="38" height="10" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Gol cima -->
+        <rect x="39" y="0" width="22" height="3" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Semicírculo cima -->
+        <path d="M 33 24 A 14 14 0 0 1 67 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Área grande baixo -->
+        <rect x="16.5" y="119" width="67" height="22" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Área pequena baixo -->
+        <rect x="31" y="131" width="38" height="10" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Gol baixo -->
+        <rect x="39" y="140" width="22" height="3" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+        <!-- Semicírculo baixo -->
+        <path d="M 33 119 A 14 14 0 0 0 67 119" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+      </svg>
+
+      <!-- Posições no campo (4-3-3) -->
+      <div class="posicao-slot" style="left:50%; top:8%;"  data-label="GOL" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>GOL</span></div>
+        <div class="posicao-label">Goleiro</div>
+      </div>
+
+      <div class="posicao-slot" style="left:18%; top:24%;" data-label="ZAG" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>ZAG</span></div>
+        <div class="posicao-label">Zagueiro</div>
+      </div>
+      <div class="posicao-slot" style="left:40%; top:22%;" data-label="ZAG" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>ZAG</span></div>
+        <div class="posicao-label">Zagueiro</div>
+      </div>
+      <div class="posicao-slot" style="left:62%; top:22%;" data-label="ZAG" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>ZAG</span></div>
+        <div class="posicao-label">Zagueiro</div>
+      </div>
+      <div class="posicao-slot" style="left:82%; top:24%;" data-label="ZAG" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>ZAG</span></div>
+        <div class="posicao-label">Zagueiro</div>
+      </div>
+
+      <div class="posicao-slot" style="left:22%; top:46%;" data-label="MEI" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>MEI</span></div>
+        <div class="posicao-label">Meia</div>
+      </div>
+      <div class="posicao-slot" style="left:50%; top:43%;" data-label="MEI" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>MEI</span></div>
+        <div class="posicao-label">Meia</div>
+      </div>
+      <div class="posicao-slot" style="left:78%; top:46%;" data-label="MEI" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>MEI</span></div>
+        <div class="posicao-label">Meia</div>
+      </div>
+
+      <div class="posicao-slot" style="left:18%; top:67%;" data-label="ATA" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>ATA</span></div>
+        <div class="posicao-label">Atacante</div>
+      </div>
+      <div class="posicao-slot" style="left:50%; top:70%;" data-label="ATA" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>ATA</span></div>
+        <div class="posicao-label">Atacante</div>
+      </div>
+      <div class="posicao-slot" style="left:82%; top:67%;" data-label="ATA" onclick="fillSlot(this)">
+        <div class="posicao-circle"><span>ATA</span></div>
+        <div class="posicao-label">Atacante</div>
+      </div>
+
+    </div>
+
+    <!-- Sidebar jogadores -->
+    <div class="campo-sidebar">
+      <h4>Jogadores disponíveis</h4>
+      <div class="campo-sidebar-list" id="bench-list">
+        <!-- preenchido pelo JS -->
+      </div>
+      <button class="campo-reset" onclick="resetCampo()">↺ Limpar escalação</button>
+    </div>
+
+  </div>
+
+</section>
+<!-- LENDAS -->
+<section id="lendas">
+
+  <p class="section-eyebrow">Imortais</p>
+  <h2 class="section-heading">Lendas do Clube</h2>
+  <div class="divider"></div>
+
+  <div class="lendas-grid">
+
+    <div class="lenda-card">
+      <div class="lenda-photo">
+        <img src="./img/pele-pulando.png" alt="Pelé">
+        <div class="lenda-overlay">
+          <div class="lenda-overlay-name">Pelé</div>
+          <div class="lenda-stats">
+            <div class="lenda-stat">
+              <span class="stat-valor">663</span>
+              <span class="stat-label">Partidas</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">643</span>
+              <span class="stat-label">Gols</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">15</span>
+              <span class="stat-label">Títulos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lenda-info">
+        <div class="lenda-name">Pelé</div>
+        <div class="lenda-period">1956 – 1974</div>
+      </div>
+    </div>
+
+    <div class="lenda-card">
+      <div class="lenda-photo">
+        <img src="./img/pepe.png" alt="Pepe">
+        <div class="lenda-overlay">
+          <div class="lenda-overlay-name">Pepe</div>
+          <div class="lenda-stats">
+            <div class="lenda-stat">
+              <span class="stat-valor">741</span>
+              <span class="stat-label">Partidas</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">403</span>
+              <span class="stat-label">Gols</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">27</span>
+              <span class="stat-label">Títulos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lenda-info">
+        <div class="lenda-name">Pepe</div>
+        <div class="lenda-period">1952 – 1969</div>
+      </div>
+    </div>
+
+    <div class="lenda-card">
+      <div class="lenda-photo">
+        <img src="./img/zito.png" alt="Zito">
+        <div class="lenda-overlay">
+          <div class="lenda-overlay-name">Zito</div>
+          <div class="lenda-stats">
+            <div class="lenda-stat">
+              <span class="stat-valor">727</span>
+              <span class="stat-label">Partidas</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">57</span>
+              <span class="stat-label">Gols</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">20+</span>
+              <span class="stat-label">Títulos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lenda-info">
+        <div class="lenda-name">Zito</div>
+        <div class="lenda-period">1950 – 1967</div>
+      </div>
+    </div>
+
+    <div class="lenda-card">
+      <div class="lenda-photo">
+        <img src="./img/coutinho.png" alt="Coutinho">
+        <div class="lenda-overlay">
+          <div class="lenda-overlay-name">Coutinho</div>
+          <div class="lenda-stats">
+            <div class="lenda-stat">
+              <span class="stat-valor">457</span>
+              <span class="stat-label">Partidas</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">368</span>
+              <span class="stat-label">Gols</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">20+</span>
+              <span class="stat-label">Títulos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lenda-info">
+        <div class="lenda-name">Coutinho</div>
+        <div class="lenda-period">1956 – 1968</div>
+      </div>
+    </div>
+
+    <div class="lenda-card">
+      <div class="lenda-photo">
+        <img src="./img/neymar2012.png" alt="Neymar">
+        <div class="lenda-overlay">
+          <div class="lenda-overlay-name">Neymar</div>
+          <div class="lenda-stats">
+            <div class="lenda-stat">
+              <span class="stat-valor">266</span>
+              <span class="stat-label">Partidas</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">153</span>
+              <span class="stat-label">Gols</span>
+            </div>
+            <div class="lenda-stat">
+              <span class="stat-valor">6</span>
+              <span class="stat-label">Títulos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lenda-info">
+        <div class="lenda-name">Neymar</div>
+        <div class="lenda-period">2009 – 2013 · <span class="lenda-ativo">Ativo</span></div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 </section>
   <script src="js-sfc.js"></script>
 </body>
