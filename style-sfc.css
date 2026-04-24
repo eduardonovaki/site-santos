@@ -53,3 +53,12 @@ body {
   font-size: 1.5rem;
   letter-spacing: 0.12em;
 }
+
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
