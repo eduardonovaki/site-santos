@@ -68,6 +68,41 @@ body {
   inset: 0;
   background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%),
               linear-gradient(160deg, #111 0%, #0a0a0a 50%, #050505 100%);
-              /* não ia achar essas cores nunca pedi pro claude */
+              /* não ia achar essas cores nunca, pedi pro claude */
   z-index: 0;
+}
+
+#hero-emblema-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+#hero-emblem {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  position: center;
+}
+/* bah ficou lindo demais, mas precisa centralizar depois ainda*/
+#hero-club-name {
+  display: block;
+  font-family: var(--fonte-display);
+  font-size: 6rem;
+  letter-spacing: 0.15em;
+  line-height: 1;
+  color: var(--branco);
+}
+
+#hero-tagline {
+  font-family: var(--fonte-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--dourado);
 }
