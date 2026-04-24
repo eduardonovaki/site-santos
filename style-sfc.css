@@ -8,6 +8,7 @@
   --preto:       #0a0a0a;
   --branco:      #f5f0e8; /* cores mais proximas do peixudo */
   --dourado:     #c9a84c;
+  --cinzaClaro:       #656463;
 
   --fonte-display: 'Bebas Neue', sans-serif;
   --fonte-heading: 'Playfair Display', serif;
@@ -57,6 +58,7 @@ body {
 #hero {
   position: relative;
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +75,7 @@ body {
 }
 
 #hero-emblema-wrap {
-  position: relative;
+  position: absolute;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -83,8 +85,8 @@ body {
 }
 
 #hero-emblem {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   position: center;
 }
@@ -94,7 +96,7 @@ body {
   font-family: var(--fonte-display);
   font-size: 6rem;
   letter-spacing: 0.15em;
-  line-height: 1;
+  line-height: 0.8;
   color: var(--branco);
 }
 
@@ -105,4 +107,31 @@ body {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--dourado);
+}
+
+.hero-scroll-hint {
+  position: absolute;
+  overflow: hidden;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  font: var(--fonte-body);
+  font-size: 0.75rem;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  color: var(--cinzaClaro);
+  z-index: 2;
+}
+.hero-scroll-hint span {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--cinzaClaro);
+}
+.scroll-line {
+    height: 2px;
+    background-color: var(--cinzaClaro);
+    width: 300px;
+    display: block;
 }
