@@ -143,5 +143,24 @@ body {
   display: flex;
   z-index: 2;
   justify-content: space-between;
-  
+}
+.section-eyebrow {
+  display: block;
+  color: var(--dourado);
+  font-family: var(--fonte-display);
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+.section-heading {
+  display: block;
+  color: var(--branco);
+  font-family: var(--fonte-display);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.divider {
+  display: block;
+  background-color: var(--branco);
+  width: 500px;
+  height: 2px;
 }
