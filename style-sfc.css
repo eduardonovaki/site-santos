@@ -90,7 +90,6 @@ body {
   object-fit: contain;
   position: center;
 }
-/* bah ficou lindo demais, mas precisa centralizar depois ainda*/
 #hero-club-name {
   display: block;
   font-family: var(--fonte-display);
@@ -134,4 +133,15 @@ body {
     background-color: var(--cinzaClaro);
     width: 300px;
     display: block;
+}
+
+#titulos {
+  position: relative;
+  padding: 6rem 4rem;
+}
+.titulos-layout {
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  
 }
