@@ -170,4 +170,11 @@ body {
   color: var(--branco);
   font-family: var(--fonte-teste);
   font-size: 1rem;
+  margin-top: 2rem;
+}
+.trofeus-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 12rem;
+  margin-top: 3rem;
 }
