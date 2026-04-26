@@ -13,6 +13,7 @@
   --fonte-display: 'Bebas Neue', sans-serif;
   --fonte-heading: 'Playfair Display', serif;
   --fonte-body:    'Inter', sans-serif;
+  --fonte-teste: 'Montserrat', sans-serif;
 }
 
 body {
@@ -163,4 +164,10 @@ body {
   background-color: var(--branco);
   width: 500px;
   height: 2px;
+}
+.section-desc {
+  display: block;
+  color: var(--branco);
+  font-family: var(--fonte-teste);
+  font-size: 1rem;
 }
