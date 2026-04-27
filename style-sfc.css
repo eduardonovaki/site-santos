@@ -14,6 +14,7 @@
   --fonte-heading: 'Playfair Display', serif;
   --fonte-body:    'Inter', sans-serif;
   --fonte-teste: 'Montserrat', sans-serif;
+  --fonte-trofeus: 'Libre Baskerville', serif;
 }
 
 body {
@@ -177,4 +178,19 @@ body {
   justify-content: space-between;
   gap: 12rem;
   margin-top: 3rem;
+}
+.trofeu-btn {
+  display: block;
+  background: none;
+  border: none;
+}
+.trofeu-name {
+  color: var(--dourado);
+  font-family: var(--fonte-display);
+  font-size: 1.4rem;
+}
+.trofeu-count {
+  color: var(--branco);
+  font-family: var(--fonte-trofeus);
+  font-size: 1rem;
 }
