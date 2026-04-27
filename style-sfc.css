@@ -181,6 +181,7 @@ body {
 }
 .trofeu-btn {
   display: block;
+  margin-top: 3rem;
   background: none;
   border: none;
 }
@@ -193,4 +194,61 @@ body {
   color: var(--branco);
   font-family: var(--fonte-trofeus);
   font-size: 1rem;
+}
+
+#lendas {
+  position: relative;
+  padding: 6rem 4rem;
+}
+.lendas-grid {
+  display: grid;
+  grid-template-areas: "pele neymar zito"
+                       "pele coutinho pepe";
+  grid-template-columns: 2fr, 1fr, 1fr;
+}
+.lenda-card:nth-child(1) {grid-area: pele; }
+.lenda-card:nth-child(2) {grid-area: pepe; }
+.lenda-card:nth-child(3) {grid-area: zito; }
+.lenda-card:nth-child(4) {grid-area: coutinho; }
+.lenda-card:nth-child(5) {grid-area: neymar; }
+
+.lenda-card{
+  position: relative;
+  width: 200px;
+  height: 600px;
+}
+.lenda-photo{
+  position: relative;
+  width: 200px;
+  height: 600px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lenda-overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lenda-overlay-name{
+  font-family: var(--fonte-display);
+  font-size: 3rem;
+  color: var(--dourado);
+}
+.lenda-stats{
+  font-family: var(--fonte-trofeus);
+  font-size: 1rem;
+  color: var(--branco);
+}
+.lenda-info{
+  font-family: var(--fonte-trofeus);
+  font-size: 1rem;
+  color: var(--branco);
+}
+.infinito {
+  font-size: 2rem;
+  color: var(--dourado);
 }
