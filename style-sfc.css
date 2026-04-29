@@ -38,6 +38,8 @@ body {
   padding: 0 4rem; /* pra descolar da esquerda e da direita*/
   background: transparent;
   z-index: 100;
+  transition: background 0.8s;
+  opacity: 0;
 }
 .nav-brand {
   display: flex;
@@ -57,6 +59,8 @@ body {
   letter-spacing: 0.12em;
 }
 #navbar.scrolled {
+  opacity: 1;
+  transition: opacity 0.8s;
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(12px);
 }
