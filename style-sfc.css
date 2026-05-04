@@ -146,7 +146,16 @@ body {
 }
 
 #timeline-drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  background: var(--preto-suave);
+  border-top: 1px solid var(--dourado);
   display: none;
+  z-index: 200;
+  padding: 2rem;
 }
 
 #titulos {
