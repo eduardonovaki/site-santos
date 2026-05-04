@@ -13,3 +13,5 @@ Projeto de site inspirado no Santos Futebol Clube, desenvolvido para praticar HT
 
 ## Objetivo
 Este projeto foi desenvolvido com o objetivo de praticar desenvolvimento web front-end, aplicando conceitos desenvolvidos no Nano-Course de Front-end da FIAP.
+
+Ainda em construção.
