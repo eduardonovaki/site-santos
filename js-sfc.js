@@ -14,12 +14,12 @@ const titulos = {
     },
     brasileirao: {
       nome: "Brasileirao",
-      img: "./img/brasil2004",
+      img: "./img/brasil2004.png",
       anos: [1961, 1962, 1963, 1964, 1965, 1968, 2002, 2004]
     },
     copa: {
       nome: "Copa do Brasil",
-      img: "./img/copadobr",
+      img: "./img/copadobr.png",
       anos: [2010]
     }
 }
