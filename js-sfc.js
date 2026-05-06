@@ -5,22 +5,40 @@ const titulos = {
     libertadores: {
         nome: "Copa Libertadores da America",
         img: "./img/liberta2.png",
-        anos: [1962, 1963, 2011]
+        conquistas: [
+          {ano:1962, mvp: "Pelé"},
+          {ano:1963, mvp: "Pelé"},
+          {ano:2011, mvp: "Neymar Jr"},
+        ]
     },
     mundial: {
         nome: "Mundial de Clubes",
         img: "./img/mundialpele.png",
-        anos: [1962, 1963]
+        conquistas:  [
+          {ano:1962, mvp: "Pelé"},
+          {ano:1963, mvp: "Pelé"},
+        ]
     },
     brasileirao: {
       nome: "Brasileirao",
       img: "./img/brasil2004.png",
-      anos: [1961, 1962, 1963, 1964, 1965, 1968, 2002, 2004]
+      conquistas: [
+        {ano:1961, mvp: "Pelé"},
+        {ano:1962, mvp: "Pelé"},
+        {ano:1963, mvp: "Pelé"},
+        {ano:1964, mvp: "Pelé"},
+        {ano:1965, mvp: "Pelé"},
+        {ano:1968, mvp: "Pelé"},
+        {ano:2002, mvp: "Robinho"},
+        {ano:2004, mvp: "Diego Ribas"},
+      ]
     },
     copa: {
       nome: "Copa do Brasil",
       img: "./img/copadobr.png",
-      anos: [2010]
+      conquistas: [
+        {ano:2010, mvp: "Neymar Jr"},
+      ]
     }
 }
 window.addEventListener('scroll', function(){
@@ -34,17 +52,26 @@ if (window.scrollY > 500) {
 for (let botao of botoes) {
   botao.addEventListener('click', function(){
     let chave = botao.dataset.key;
-      console.log(chave);
+
     let dados = titulos[chave];
-      console.log(dados);
     painel.style.display = 'block';
+
     let imagemPainel = document.getElementById("timeline-trofeu-img");
     imagemPainel.src = dados.img;
     let textoPainel = document.getElementById("timeline-drawer-title");
     textoPainel.textContent = dados.nome;
+    let dadosPainel = document.getElementById("timeline-track");
+    dadosPainel.innerHTML = " ";
+    for (let conquistas of dados.conquistas){
+      let item = document.createElement('div');
+      item.innerHTML = `
+      <span>${conquistas.ano}</span>
+      <span>${conquistas.mvp}</span> `
+      dadosPainel.appendChild(item);
+    }
+  })
+}
     let botaoClose = document.getElementById("timeline-close");
     botaoClose.addEventListener('click', function(){
       painel.style.display = 'none';
     })
-  })
-}
