@@ -14,7 +14,7 @@ const titulos = {
     },
     mundial: {
         nome: "Mundial de Clubes",
-        img: "./img/mundialpele.png",
+        img: "./img/mundialPele.png",
         conquistas:  [
           {ano:1962, mvp: "Melhor jogador: Pelé", rival:"Vice: Benfica", placar:"Placar agregado: 8x4"},
           {ano:1963, mvp: "Melhor jogador: Pelé", rival:"Vice: Milan", placar:"Placar agregado: 7x6"},
