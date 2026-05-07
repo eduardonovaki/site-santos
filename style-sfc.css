@@ -276,9 +276,7 @@ body {
   filter: drop-shadow(2px 2px 5px var(--dourado));
 }
 .trofeu-btn img{
-  width: 200px;
   border-radius: 5px;
-
 }
 .trofeu-name {
   color: var(--dourado);
@@ -312,6 +310,7 @@ body {
 
 .lenda-card{
   position: relative;
+  width: 500px;
   overflow: hidden;
 }
 .lenda-card:nth-child(1).lenda-photo{
@@ -512,6 +511,7 @@ body {
     text-align: center;
   }
 
+  /* TIMELINE DRAWER */
 
   #timeline-drawer {
     padding: 1rem;
@@ -530,6 +530,7 @@ body {
     justify-content: flex-start;
   }
 
+  /* remove imagem no mobile */
   .timeline-img {
     display: none;
   }
@@ -583,6 +584,8 @@ body {
   .conquista-mvp {
     font-size: 0.95rem;
   }
+
+  /* LENDAS */
 
   .lendas-grid {
     display: flex;
@@ -652,21 +655,5 @@ body {
   .section-textinho {
     font-size: 0.95rem;
     line-height: 1.5;
-  }
-}
-
-@media (min-width: 1400px) { /*monitores maiores*/
-  .trofeus-grid {
-    gap: 6rem;
-  }
-  .trofeu-btn{
-    justify-content: center;
-  }
-  .trofeu-btn img {
-    width: 350px;
-  }
-  .titulos-layout {
-    max-width: 1600px;
-    margin: 0 auto;
   }
 }
