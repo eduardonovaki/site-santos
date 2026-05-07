@@ -297,10 +297,12 @@ body {
   display: grid;
   grid-template-areas: "pele neymar zito"
                        "pele coutinho pepe";
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 1000px;
-  transform: scale(0.95);
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  height: auto;
 }
 .lenda-card:nth-child(1) {grid-area: pele; }
 .lenda-card:nth-child(2) {grid-area: pepe; }
@@ -310,7 +312,8 @@ body {
 
 .lenda-card{
   position: relative;
-  width: 500px;
+  width: 100%;
+  min-width: 320px;
   overflow: hidden;
 }
 .lenda-card:nth-child(1).lenda-photo{
@@ -655,5 +658,39 @@ body {
   .section-textinho {
     font-size: 0.95rem;
     line-height: 1.5;
+  }
+}
+@media (min-width: 1800px) {
+
+  #hero-club-name {
+    font-size: 8rem;
+  }
+
+  .section-h2 {
+    font-size: 3rem;
+  }
+
+  .section-desc,
+  .section-textinho {
+    font-size: 1.2rem;
+  }
+
+  .trofeus-grid {
+    justify-content: center;
+    gap: 16rem;
+  }
+
+  .lendas-grid {
+    max-width: 2200px;
+    gap: 2rem;
+  }
+
+  .lenda-overlay-name {
+    font-size: 4rem;
+  }
+
+  .lenda-stats,
+  .lenda-info {
+    font-size: 1.2rem;
   }
 }
