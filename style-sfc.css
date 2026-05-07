@@ -657,8 +657,10 @@ body {
 
 @media (min-width: 1400px) { /*monitores maiores*/
   .trofeus-grid {
-    justify-content: center;
     gap: 6rem;
+  }
+  .trofeu-btn{
+    justify-content: center;
   }
   .trofeu-btn img {
     width: 350px;
