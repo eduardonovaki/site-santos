@@ -511,7 +511,6 @@ body {
     text-align: center;
   }
 
-  /* TIMELINE DRAWER */
 
   #timeline-drawer {
     padding: 1rem;
@@ -530,7 +529,6 @@ body {
     justify-content: flex-start;
   }
 
-  /* remove imagem no mobile */
   .timeline-img {
     display: none;
   }
@@ -584,8 +582,6 @@ body {
   .conquista-mvp {
     font-size: 0.95rem;
   }
-
-  /* LENDAS */
 
   .lendas-grid {
     display: flex;
@@ -655,5 +651,17 @@ body {
   .section-textinho {
     font-size: 0.95rem;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 1400px) { /*monitores maiores*/
+  .trofeus-grid {
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .titulos-layout {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
