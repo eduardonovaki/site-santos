@@ -657,11 +657,11 @@ body {
 @media (min-width: 1400px) { /*monitores maiores*/
   .trofeus-grid {
     justify-content: center;
-    gap: 4rem;
+    gap: 6rem;
   }
 
   .titulos-layout {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
   }
 }
