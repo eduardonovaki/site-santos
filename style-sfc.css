@@ -676,7 +676,7 @@ body {
 
   .hero-scroll-hint {
     position: absolute;
-    left: 50%;
+    left: 40%;
     bottom: 30px;
     transform: translateX(-50%);
     width: max-content;
