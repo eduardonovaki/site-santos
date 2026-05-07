@@ -675,13 +675,23 @@ body {
   }
 
   .hero-scroll-hint {
+    position: absolute;
     left: 50%;
+    bottom: 30px;
     transform: translateX(-50%);
+    width: max-content;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-scroll-hint span {
+    display: block;
     text-align: center;
   }
 
   .scroll-line {
     width: 420px;
+    margin-inline: auto;
   }
 
   #titulos,
@@ -707,17 +717,31 @@ body {
   }
 
   .trofeus-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+    justify-content: center;
     justify-items: center;
-    gap: 6rem;
+    align-items: start;
+    gap: 8rem;
+    margin-top: 5rem;
   }
 
   .trofeu-btn {
-    max-width: 260px;
+    width: 100%;
+    max-width: 320px;
   }
 
   .trofeu-btn img {
-    width: 100%;
+    width: 320px;
+    height: auto;
+  }
+
+  .trofeu-name {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .trofeu-count {
+    font-size: 1.2rem;
   }
 
   .lendas-grid {
