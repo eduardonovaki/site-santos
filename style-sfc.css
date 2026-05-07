@@ -312,7 +312,6 @@ body {
 
 .lenda-card{
   position: relative;
-  width: 500px;
   overflow: hidden;
 }
 .lenda-card:nth-child(1).lenda-photo{
