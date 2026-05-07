@@ -662,12 +662,43 @@ body {
 }
 @media (min-width: 1800px) {
 
+  #hero {
+    padding-inline: 6rem;
+  }
+
   #hero-club-name {
     font-size: 8rem;
   }
 
+  #hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-scroll-hint {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .scroll-line {
+    width: 420px;
+  }
+
+  #titulos,
+  #lendas {
+    padding-inline: 6rem;
+  }
+
+  .titulos-layout,
+  .lendas-grid,
+  .timeline-inner {
+    max-width: 1800px;
+    margin-inline: auto;
+  }
+
   .section-h2 {
     font-size: 3rem;
+    max-width: 1200px;
   }
 
   .section-desc,
@@ -676,13 +707,44 @@ body {
   }
 
   .trofeus-grid {
-    justify-content: center;
-    gap: 16rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 6rem;
+  }
+
+  .trofeu-btn {
+    max-width: 260px;
+  }
+
+  .trofeu-btn img {
+    width: 100%;
   }
 
   .lendas-grid {
-    max-width: 2200px;
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .lenda-card {
+    width: 100%;
+    min-height: 520px;
+  }
+
+  .lenda-photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .lenda-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .lenda-overlay {
+    padding: 2rem;
   }
 
   .lenda-overlay-name {
