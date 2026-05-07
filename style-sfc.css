@@ -276,7 +276,9 @@ body {
   filter: drop-shadow(2px 2px 5px var(--dourado));
 }
 .trofeu-btn img{
+  width: 200px;
   border-radius: 5px;
+
 }
 .trofeu-name {
   color: var(--dourado);
@@ -659,7 +661,9 @@ body {
     justify-content: center;
     gap: 6rem;
   }
-
+  .trofeu-btn img {
+    width: 280px;
+  }
   .titulos-layout {
     max-width: 1600px;
     margin: 0 auto;
