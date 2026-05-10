@@ -292,7 +292,7 @@ body {
 #lendas {
   position: relative;
   padding: 6rem 4rem;
-  height: 170vh;
+  min-height: 170dvh;
 }
 .lendas-grid {
   display: grid;
@@ -428,8 +428,8 @@ body {
   }
 
   #hero {
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 100dvh;
+    height: auto;
     padding: 0 1rem;
   }
 
@@ -607,7 +607,9 @@ body {
   }
 
   /* LENDAS */
-
+  #lendas{
+    min-height: 100dvh;
+  }
   .lendas-grid {
     display: flex;
     flex-direction: column;
@@ -678,11 +680,11 @@ body {
     line-height: 1.5;
   }
  .icons {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 1rem 1rem;
+    z-index: 3;
   }
 }
 @media (min-width: 1800px) {
