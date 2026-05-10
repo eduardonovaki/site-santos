@@ -677,6 +677,13 @@ body {
     font-size: 0.95rem;
     line-height: 1.5;
   }
+ .icons {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 @media (min-width: 1800px) {
 
